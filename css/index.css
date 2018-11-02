@@ -1,0 +1,108 @@
+/* 
+*当前项目需要放在手机端展示，为了能够使配更多的手机型号
+*  1.我们参考的案例或者设计稿应该是750px宽度的
+*  2.我们把测量出来的尺寸全部改为REM单位（例如：测量出来的尺寸是350px，我们的样式写成3.5rem），在原有值基础上除以100即可实现px和rem的转换=>“rem响应式布局的原理”
+*/
+
+/* PAGE1的样式 */
+.page1 {
+    background: url('../image/index_6.png') no-repeat;
+    background-size: cover;
+    /* COVER以最适合的比例铺满整个屏幕*/
+    position: relative;
+    /*让其后代元素相对于它来定位*/
+}
+
+.page1 img:nth-of-type(1) {
+    position: absolute;
+    right: 0;
+    width: 6.88rem;
+    height: 3.48rem;
+}
+
+.page1 img:nth-of-type(2) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 7.5rem;
+    height: 4.3rem;
+}
+
+.page1 img:nth-of-type(3) {
+    position: absolute;
+    left: 1.8rem;
+    top: 6.6rem;
+    width: 3.2rem;
+    height: 2.1rem;
+}
+
+.page1 img:nth-of-type(4) {
+    position: absolute;
+    top: 4rem;
+    left: .6rem;
+    width: 2.5rem;
+    height: 2.8rem;
+}
+
+.page1 img:nth-of-type(5) {
+    position: absolute;
+    top: 3.8rem;
+    right: .4rem;
+    width: 4rem;
+    height: 4rem;
+}
+/*第二页*/
+.page2{
+    background: url(../image/page2_1.jpg)no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.page2 img:nth-of-type(1){
+    position: absolute;
+    left: .8rem;
+    top: 1.3rem;
+    width: 2.2rem;
+    height: 1.6rem;
+}
+.page2 img:nth-of-type(2){
+    position: absolute;
+    right: .6rem;
+    top: 1.2rem;
+    width: 2.2rem;
+    height: 2rem;
+}
+.page2 img:nth-of-type(3){
+    position: absolute;
+    right: .6rem;
+    top: 3.4rem;
+    width: 1.6rem;
+    height: 1.2rem;
+}
+.page2 .text{
+    position: absolute;
+    left: .8rem;
+    top: 3rem;
+    width: 3.6rem;
+}
+.page2 .text p{
+    line-height: .64rem;
+    font-size: .32rem;
+}
+.page2 .photo{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    margin-left: -3.12rem;
+    padding: .4rem;
+    width: 5.44rem;
+    height: 3.24rem;
+    background: url('../image/page2_6.png') no-repeat;
+    background-size: 100% 100%;
+}
+.page2 .photo img{
+    position: absolute;
+    top: .4rem;
+    left: .4rem;
+    width: 5.44rem;
+    height: 3.24rem;
+}

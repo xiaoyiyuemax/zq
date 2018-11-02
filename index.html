@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>17web班滑屏实训</title>
+
+	<!-- IMPORT CSS -->
+	<link rel="stylesheet" href="css/zhufengAnimate.min.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<!-- IMPORT JS -->
+	<script src="js/zhufengAnimate.min.js"></script>
+</head>
+
+<body>
+	<!-- 在框架中我们把音乐处理好了，只需要给,MAIN-BOX设置music属性，属性值是音乐的地址即可(建议音频格式：MP3) -->
+	<main class="mainBox" music="audio/11111.MP3">
+		<!-- 第一页 -->
+		<div class="page1">
+			<!-- 想让那个元素有动画效果，只需给元素设置AN属性，属性值是animate.min.css动画库中相关动画的播放(操作是在框架中实现的) -->
+		    <img src="image/index_1.png" alt="" AN="bounceInRight 1s both">
+			<img src="image/index_2.png" alt="" AN="bounceInUp 1s both">
+			<img src="image/index_3.png" alt="" AN="rubberBand 1s 2.5s both">
+			<img src="image/index_4.png" alt="" AN="wobble 1s .5s both">
+			<img src="image/index_5.png" alt="" AN="jello 1s 1.5s both">
+		</div>
+
+		<!-- 第二页 -->
+		<div class="page2">
+			 <img src="image/page2_2.png" alt="" AN="zoomIn 1s both">
+			 <img src="image/page2_3.png" alt="" AN="zoomIn 1s .5s both">
+			 <img src="image/page2_4.png" alt="" AN="zoomIn 1s 1s both">
+			 <div class="text">
+				 <p AN="bounceInLeft 1s both">三更灯火五更鸡</p>
+				 <p AN="bounceInRight 1s 1s both">恰是男儿读书时</p>
+				 <p AN="bounceInLeft 1s 2s both">黑发不知勤学早</p>
+				 <p AN="bounceInRight 1s 3s both">白首方悔读书迟</p>
+			 </div>
+			 <div class="photo" AN="rubberBand 1s both">
+				 <img src="image/person_4.jpg" alt=""AN="rotateIn 1s 1s both">
+			 </div>
+		</div>
+
+		<!-- 第三页 -->
+		<div class="page3">
+			3
+		</div>
+
+		<!-- 第四页 -->
+		<div class="page4">
+			4
+		</div>
+	</main>
+</body>
+</html>
+<!-- 
+	我们是基于ZHUDENG-ANIMATE滑屏框架来实现项目的
+	  1.首先导入zhufeng-Animte.min.css/.min.js
+	  2.把所有构建的页面屏幕写在.MAIN-BOX样式类中，每一个页面就是一个DIV，设置对应的PAGE-N样式
+ -->
+ <!-- .page1 {
+       background:ur('../image/index_6.png') no-repeat;
+ } -->
